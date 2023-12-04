@@ -6,6 +6,7 @@ import umc.study.base.Code;
 @Getter
 public class GeneralException extends RuntimeException{
     private final Code errorCode;
+//    private BaseErrorCode baseErrorCode;
 
     public GeneralException() {
         super(Code._INTERNAL_SERVER_ERROR.getMessage());
@@ -47,3 +48,4 @@ public class GeneralException extends RuntimeException{
         this.errorCode = errorCode;
     }
 }
+
